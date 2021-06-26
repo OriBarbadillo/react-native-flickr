@@ -4,7 +4,6 @@ import axios from 'axios';
 import AlbumDetail from './AlbumDetail';
 
 const AlbumList = (props) => {
-  //state = {photoset: null};
   const [photoset, setPhotoSet] = useState(null)
 
   useEffect(() => {
@@ -26,8 +25,6 @@ const AlbumList = (props) => {
         albumId={album.id}
       />
   )
-
-  //console.log(this.state);
 
   if (!photoset) {
     return <Text>Loading...</Text>;

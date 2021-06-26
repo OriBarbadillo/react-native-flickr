@@ -33,7 +33,7 @@ const AlbumDetail = ({navigation, title, albumId}) => {
 const styles = {
   headerContentStyle: {
     flexDirection: 'column',
-    justifyContent: 'space-around',
+    justifyContent: 'space-around'
   },
   headerTextStyle: {
     fontSize: 18,

@@ -10,7 +10,7 @@ import React from 'react';
 import {
   SafeAreaView,
   StyleSheet,
-  ScrollView,
+  FlatList,
   View,
   Text,
   StatusBar,
@@ -29,7 +29,7 @@ const App =  () => React$Node = () => {
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
-        <ScrollView
+        <FlatList
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}>
           <Header />
@@ -66,7 +66,7 @@ const App =  () => React$Node = () => {
             </View>
             <LearnMoreLinks />
           </View>
-        </ScrollView>
+        </FlatList>
       </SafeAreaView>
     </>
   );
@@ -74,14 +74,16 @@ const App =  () => React$Node = () => {
 
 const styles = StyleSheet.create({
   scrollView: {
-    backgroundColor: Colors.lighter,
+    backgroundColor: Colors.blue,
+    color: Colors.red
   },
   engine: {
     position: 'absolute',
     right: 0,
   },
   body: {
-    backgroundColor: Colors.white,
+    backgroundColor: Colors.red,
+    color: Colors.red
   },
   sectionContainer: {
     marginTop: 32,
@@ -90,19 +92,19 @@ const styles = StyleSheet.create({
   sectionTitle: {
     fontSize: 24,
     fontWeight: '600',
-    color: Colors.black,
+    color: Colors.red,
   },
   sectionDescription: {
     marginTop: 8,
     fontSize: 18,
     fontWeight: '400',
-    color: Colors.dark,
+    color: Colors.red,
   },
   highlight: {
     fontWeight: '700',
   },
   footer: {
-    color: Colors.dark,
+    color: Colors.red,
     fontSize: 12,
     fontWeight: '600',
     padding: 4,
